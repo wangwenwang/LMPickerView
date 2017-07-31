@@ -18,18 +18,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nXl-Gy-StX">
-                                <color key="backgroundColor" red="1" green="0.55515242912472185" blue="0.15981585295478684" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kms-kb-aC8">
+                                <color key="backgroundColor" red="1" green="0.55515242909999996" blue="0.15981585300000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="79" id="Hzq-cH-qhn"/>
-                                    <constraint firstAttribute="height" constant="37" id="sNA-YX-91B"/>
+                                    <constraint firstAttribute="width" constant="79" id="G4M-JZ-cO9"/>
+                                    <constraint firstAttribute="height" constant="37" id="bcA-XJ-aoW"/>
                                 </constraints>
                                 <state key="normal" title="选择时间"/>
                                 <connections>
-                                    <action selector="chooseDate" destination="BYZ-38-t0r" eventType="touchUpInside" id="YWa-fo-W7Q"/>
+                                    <action selector="chooseDate" destination="BYZ-38-t0r" eventType="touchUpInside" id="2ND-22-aGl"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b76-Xd-dik">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wBu-ee-ZBZ">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -37,19 +37,15 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nXl-Gy-StX" secondAttribute="bottom" constant="30" id="1vX-YD-mLa"/>
-                            <constraint firstItem="b76-Xd-dik" firstAttribute="centerY" secondItem="nXl-Gy-StX" secondAttribute="centerY" id="9Gs-Th-oD5"/>
-                            <constraint firstItem="nXl-Gy-StX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-60" id="B6j-5n-UZC"/>
-                            <constraint firstItem="b76-Xd-dik" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="60" id="CnJ-lk-N8p"/>
+                            <constraint firstItem="wBu-ee-ZBZ" firstAttribute="centerY" secondItem="kms-kb-aC8" secondAttribute="centerY" id="6dt-bu-xJR"/>
+                            <constraint firstItem="kms-kb-aC8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-70" id="evG-Pj-sbr"/>
+                            <constraint firstItem="wBu-ee-ZBZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="70" id="eyS-9E-IUm"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kms-kb-aC8" secondAttribute="bottom" constant="40" id="oPv-fw-PXL"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="dateLabel" destination="b76-Xd-dik" id="FOD-e4-zXk"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
     </scenes>
 </document>
