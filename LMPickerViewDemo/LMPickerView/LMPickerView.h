@@ -43,6 +43,12 @@
 
 
 /**
+ 日期类型 默认yyyy-MM-dd 还有yyyy-MM
+ */
+@property (copy, nonatomic) NSString *dateType;
+
+
+/**
  初始化控件
  */
 - (void)initDatePicker;

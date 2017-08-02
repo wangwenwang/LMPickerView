@@ -163,7 +163,16 @@ typedef enum _CloseDatePicker {
     _datePicker.maximumDate = _maximumDate;
     _datePicker.date = _date;
     [_datePickerContainerView addSubview:_datePicker];
+    _selectedDate = _date;
     
+    // 添加遮盖，只显示 年 月
+    if([_dateType isEqualToString:@"yyyy-MM"]) {
+        
+        CGFloat fdWidth = CGRectGetWidth(_datePickerContainerView.frame) / 2.5;
+        UIView *fd = [[UIView alloc] initWithFrame:CGRectMake(CGRectGetWidth(_datePickerContainerView.frame) - fdWidth, 0, fdWidth, height)];
+        fd.backgroundColor = _datePickerContainerView.backgroundColor;
+        [_datePickerContainerView addSubview:fd];
+    }
     _isShowDatePicker = YES;
 }
 

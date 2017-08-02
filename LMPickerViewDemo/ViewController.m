@@ -31,6 +31,8 @@
     _LM.delegate = self;
     
     [_LM initDatePicker];
+    
+    _LM.dateType = @"yyyy-MM";
 }
 
 
